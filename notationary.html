@@ -10,9 +10,8 @@
     <header>
         <div class="left-header">
             <h1>Notationary</h1>
-            <nav>
+            <nav style="margin-left: 10px;">
                 <ul>
-                    <li><a href="#">Our Templates</a></li>
                     <li><a href="#">My Work</a></li>
                     <li><a href="#">AI Assistance</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -26,10 +25,28 @@
         </div>
     </header>
     <main>
-        <button id="create-note-button" class="create-note-button">
-            <i class="fa fa-pencil"></i> Create a Note
-        </button>
+        <div class="side-panel">
+            <div class="side-panel-content">
+                <ul class="Folder">
+                    <li class="Foldername">
+                        Parent Item 1
+                        <ul class="file">
+                            <li>Child Item 1</li>
+                            <li>Child Item 2</li>
+                        </ul>
+                    </li>
+                    <li class="Foldername">
+                        Parent Item 2
+                        <ul class="file">
+                            <li>Child Item 1</li>
+                            <li>Child Item 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
