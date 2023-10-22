@@ -5,9 +5,11 @@ body {
 main{
     display: flex;
     align-items: flex-start;
-    position: absolute;
-    height: 90%;
+    /* position: absolute; */
+    height: 87%;
     padding: 1%;
+    /* width: 100%; */
+    gap: 1%;
 }
 
 header {
@@ -60,28 +62,6 @@ header {
 
 /* Add this to your existing styles.css */
 
-.create-note-button {
-    background-color: #2a453c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin: 20px;
-    /* Add margin to space it from other content */
-}
-
-.create-note-button i {
-    margin-right: 5px;
-}
-
-.create-note-button:hover {
-    background-color: #b98b29;
-}
-
-/* Add this to your existing styles.css */
 
 .right-header button {
     background-color: #4caf50;
@@ -104,13 +84,9 @@ header {
 }
 
 .side-panel {
-    width: 180px;
-    height: 100%;
+    width: 25vh;
+    height: 85vh;
     background-color: #ccc;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
 }
 
 .side-panel-header {
@@ -134,14 +110,6 @@ header {
 
 .side-panel-item:hover {
     background-color: #ddd;
-}
-
-.side-panel {
-    width: 200px;
-    height: 100%;
-    background-color: #ccc;
-    position: relative;
-    z-index: 1;
 }
 
 .side-panel-header {
@@ -220,4 +188,22 @@ header {
     border: none;
     background: transparent;
     font-size: medium;
+}
+
+#editor {
+    max-height: 400px; /* Change this value as needed */
+    overflow-y: auto;
+}
+
+.save{
+    background-color: white; 
+    color: black; 
+    border-radius: 5px;
+    border: 2px solid #008CBA;
+    width: 115px;
+    height: 40px;
+}
+.save:hover {
+    background-color: #008CBA;
+    color: white;
 }
