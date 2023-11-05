@@ -86,7 +86,7 @@ header {
 .side-panel {
     width: 25vh;
     height: 85vh;
-    background-color: #ccc;
+    background-color: #6c757d;
 }
 
 .side-panel-header {
@@ -206,4 +206,10 @@ header {
 .save:hover {
     background-color: #008CBA;
     color: white;
+}
+
+
+/* for home.php */
+.car{
+    margin-top: 10%;
 }
