@@ -2,7 +2,7 @@
 session_start();
 $servername = "localhost";
 $username = "root";
-$password = "1234";
+$password = "";
 $dbname = "notationary";
 $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

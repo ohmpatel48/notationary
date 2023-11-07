@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "1234";
+$password = "";
 $dbname = "notationary";
 $id = $_GET["fileid"];
 $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

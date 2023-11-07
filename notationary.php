@@ -23,31 +23,25 @@ $foldername = $_SESSION["folder_name"];
 </head>
 <body>
   <header>
+    
     <div class="left-header">
-      <h1>Notationary</h1>
-      <nav style="margin-left: 10px">
+      <h4>Notationary</h4>
+      <nav style="margin-left: 5px">
         <ul>
-          <li><a href="#">My Work</a></li>
           <li><a href="#">AI Assistance</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </nav>
     </div>
-    <div class="right-header">
-      <button id="signin-button">Sign In</button>
-      <button id="signup-button">Sign Up</button>
-    </div>
   </header>
   <main>
-    <div class="side-panel" style="background-color: #6c757d;">
+    <div class="side-panel" style="background-color: #4481eb">
       <div class="side-panel-content">
         <div style="display: flex; justify-content: space-around">
-          <p id="Foldername" style="padding :0px;margin: 0px;">
-            <?php echo $foldername; ?>
-          </p>
+          
           <div style="display: flex; flex-wrap: wrap; align-content: center">
-            <button class="btn btn-secondary" id="new-file-button" style="
+            <button class="btn" id="new-file-button" style="background-color: #4481eb"
                   padding: 0px;
                   margin-right:10px;
                   border: none;
@@ -56,9 +50,14 @@ $foldername = $_SESSION["folder_name"];
                 ">
               <img style="width: 100%; height: 100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nO2Wz0rDQBCHv4u9GDxK8QmkRerFVp9Ra/rnSTx56FOIVfGqPoBioS0qKwu/QqhpuhvHxkMHlizLL7NfZmd2Alv7x+ZKjHugXiWAAx6BA0uAUDOHcCUBHjLPehUA+8DYIhKuJABWEO4XOZBXHZUCuE0ArLItgNseARtOwiaQ6h6YZPycA4d/CVADhsBnQSl+AF1gxxqgBoyknwI9oA3sanSAPjCT5lrvmAEMpX0Cjgp0LeBZ2p4VQFNhn+ZsnuejpUh8AQ0LgFS6NMLHQOt9C4A76U4ifHS0PrYAeJcuiWhKieaTqgD2NH+zAFj8eLQjfJxq/dYC4LIgoVb5WJRtNwQgdMxUYusAjoG5SrdhCeB0ySxDLG/+EnoRxZi/Vq8ykRjonBONM4V9Ls0otB8QCXER0Iz8l5tvnjV/rr713gCvKlOf7T7hfpz5NyuZ/ag3EIF5AAAAAElFTkSuQmCC" />
             </button>
+            <p id="Foldername" style="padding :0px;margin: 0px;">
+            <?php echo $foldername; ?>
+          </p>
           </div>
         </div>
-        <input type="text" id="file-name" class="border border-0" style="background-color: #9a9696; color:black;display:none;" placeholder="Folder Name" />
+        <input type="text" id="file-name" class="border border-0" style="background-color:white; 
+        width:-webkit-fill-available;
+        color:black;display:none;" placeholder="Untitled" />
         <ul class="list-group " id="myList">
           <?php 
           if (isset($_SESSION["folder_id"])) {
@@ -69,7 +68,7 @@ $foldername = $_SESSION["folder_name"];
           }
           $servername = "localhost";
           $username = "root";
-          $password = "1234";
+          $password = "";
           $dbname = "notationary";
           $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
           $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

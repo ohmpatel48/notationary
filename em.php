@@ -2,7 +2,7 @@
 session_start();
 $servername = "localhost";
 $username = "root";
-$password = "1234";
+$password = "";
 $dbname = "notationary";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
