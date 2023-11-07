@@ -2,7 +2,7 @@
 SESSION_START();
 $servername = "localhost";
 $username = "root";
-$password = "1234";
+$password = "";
 $dbname = "notationary";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
